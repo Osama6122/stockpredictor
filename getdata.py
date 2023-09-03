@@ -5,7 +5,7 @@ import datetime
 
 def get_data_for_symbol(symbol):
     #Creates URL for the symbol and fetches data for it. Returns JSON formatted data.
-    url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={symbol}&outputsize=full&apikey=L7QNGXR1XCX8OCA8'
+    url = f'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={symbol}&outputsize=full&apikey=demo'
     try:
         r = requests.get(url)
         r.raise_for_status()
